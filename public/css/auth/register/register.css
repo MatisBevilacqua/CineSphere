@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+:root {
+    --yellowBig: #E5C642;
+    --yellowLight: #2E3349;
+    --grey: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: var(--yellowLight);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--yellowLight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_group {
+    padding: 50px 0 20px 0;
+}
+
+.container_title {
+    font-size: 60px;
+    text-align: center;
+    color: var(--yellowBig);
+}
+
+.container_sub {
+    padding: 10px 0 30px 0;
+    color: white;
+}
+
+input {
+    border: 2px solid var(--yellowBig);
+    width: 400px;
+    background: var(--yellowLight);
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 0 0 10px;
+    outline: none;
+    margin: 20px;
+    color: white;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey);
+}
+
+.container_button {
+    text-decoration: none;
+    width: 410px;
+    background: var(--yellowBig);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    height: 40px;
+}
+
+
+select {
+    border: 2px solid var(--yellowBig);
+    width: 410px;
+    background: var(--yellowLight);
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 0 0 10px;
+    outline: none;
+    margin: 20px;
+    color: white;
+}
+select option {
+    color: black; 
+    background: white; 
+}
+
+.left {
+    align-self: flex-start;
+    padding: 0 0 30px 100px;
+}
+
+.step {
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-in {
+    opacity: 1;
+    animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+    opacity: 0;
+    animation: slideOut 0.5s forwards;
+}
+
+.slide-out-reverse {
+    opacity: 0;
+    animation: slideOutReverse 0.5s forwards;
+}
+
+.slide-in-reverse {
+    opacity: 1;
+    animation: slideInReverse 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideOutReverse {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideInReverse {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--yellowBig);
+    transition: width 0.3s ease-in-out;
+}

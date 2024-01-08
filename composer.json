@@ -1,0 +1,11 @@
+{
+    "name": "matisbevilacqua/streaming",
+    "autoload": {
+        "psr-4": {
+            "Streaming\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

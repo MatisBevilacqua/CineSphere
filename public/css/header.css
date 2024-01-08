@@ -1,0 +1,28 @@
+header {
+    min-width: 100px;
+    max-width: 100px; 
+    padding: 20px 0 20px 0;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    transform: rotate(360deg) ;
+    display: flex;
+    justify-content: center;
+    background-color: #3A4058;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+a {
+    color: white;
+}
+
+.header_nav_icon_account{
+    margin:2.5vh 0 0 0;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}

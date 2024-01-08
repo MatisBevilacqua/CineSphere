@@ -1,0 +1,113 @@
+:root{
+    --yellowBig: #E5C642;
+    --yellowLight: #2E3349;
+    --grey: #a0a0a0;
+}
+
+
+
+.show_profile_stream_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.show_profile_stream_container_img{
+    margin: 20px 0 0 0;
+    width: 70%;
+    height: 90vh;
+    border-radius: 8px;
+    align-self: center;
+    padding: 0 100px 0 0;
+}
+
+.show_profile_stream_container_button{
+    width: 91%;
+    border-radius: 8px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(450%);
+    position: absolute;
+}
+
+.show_profile_stream_container_button_click{
+    width: 60px;
+    height: 60px;
+    border-radius: 9999999px;
+    background-color: var(--yellowBig);
+    border: solid 10px white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px 0 0;
+}
+
+.profil{
+    margin: 100px 0 100px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #3A4058;
+    border-radius: 8px;
+}
+
+.profil_description{
+    width: 70vw;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.profil_stream{
+    transform: translate(-100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellowLight);
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+
+.profil_stream-active{
+    transition: 0.7s;
+    transform: translate(0);
+    width: 100vw;
+    height: 100vh;
+    background: var(--yellowLight);
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil_stream_back{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    border-radius: 9999px;
+    background-color: #3A4058;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
